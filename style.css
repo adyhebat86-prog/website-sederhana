@@ -1,0 +1,23 @@
+h1{
+    color :#7fd1cf;
+    background-color: 
+    #0a2540;
+}.container{
+    display:flex;
+    flex-direction: column ;
+    justify-content:space-around;
+    padding: 100px;
+    flex-wrap: wrap;
+}
+h2{
+    border:1px solid black;
+    padding: 20px;
+    color:rgb(255, 255, 255);
+    background-color: aqua;
+}
+.container1{
+    display: grid;
+    gap:10px;
+    grid-template-columns: 25% 25% 25%;
+    grid-column-start: 1;
+    grid-column-end: 3;

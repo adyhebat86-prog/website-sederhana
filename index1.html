@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halaman tanpa css</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu"
+    />
+  </head>
+  <body class="bg-gray-50 font-sans">
+    <header>
+      <!--navbar-->
+      <nav class="bg-slate-800 text-white fixed w-full top-0 z-50">
+        <div
+          class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+        >
+          <div class="text-xl font-bold">BrandKita</div>
+          <!-- M mobile -->
+          <button id="menu-btn" class="md:hidden">
+            <span class="material-symbols-outlined"> menu </span>
+          </button>
+          <!-- Menu tampilan website -->
+          <ul class="hidden md:flex gap-6">
+            <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+            <li><a href="#about" class="hover:text-blue-400">About Us</a></li>
+            <li>
+              <a href="#portfolio" class="hover:text-blue-400">Portfolio</a>
+            </li>
+            <li><a href="#contact" class="hover:text-blue-400">Kontak</a></li>
+            <li> <a href="data.html" class="bg-teal-600 hover:bg-teal-500 active:bg-teal-400 text-white px-6 py-2 rounded-lg font-semibold transition">Login</a></li>
+          </ul>
+        </div>
+        <!-- Menu tampilan mobile -->
+        <div id="menu" class="hidden md:hidden bg-slate-800 px-6 pb-4">
+          <ul class="flex flex-col gap-4 text-center">
+            <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+            <li><a href="#about" class="hover:text-blue-400">About Us</a></li>
+            <li>
+              <a href="#portfolio" class="hover:text-blue-400">Portfolio</a>
+            </li>
+            <li><a href="#contact" class="hover:text-blue-400">Kontak</a></li>
+              <li> <a href="data.html" class="bg-teal-600 hover:bg-teal-500 active:bg-teal-400 text-white px-6 py-2 rounded-lg font-semibold transition">Login</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <header
+      id="home"
+      class="bg-[url('image/pexel.jpg')] bg-cover relative min-h-[80vh] flex flex-col justify-center items-center text-center px-6"
+    >
+      <div class="absolute inset-0 bg-black/70"></div>
+      <div class="relative z-10">
+        <h1
+          class="text-3xl sm:text-4xl md:text-6xl font-extrabold text-white mb-4"
+        >
+          Selamat datang di website kami
+        </h1>
+        <p class="py-1 text-white">
+          Halaman ini adalah halaman utama website perusahaan
+        </p>
+        <button
+          type="button"
+          class="bg-blue-600 hover:bg-blue-900 text-white px-8 py-3 rounded-lg font-semibold transition"
+        >
+          Lihat Portfolio
+        </button>
+        <div
+          class="mt-8 flex flex-wrap justify-center gap-6 text-sm text-white"
+        >
+          <div>
+            <span class="font-bold text-white">50+</span> Project Selesai
+          </div>
+          <div><span class="font-bold text-white">10+</span> Client</div>
+          <div>
+            <span class="font-bold text-white">3++</span> Tahun Pelajaran
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--about-->
+    <section id="about" class="px-6 py-16 bg-white">
+      <div
+        class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start"
+      >
+        <div>
+          <h2 class="text-3xl font-bold mb-4">About us</h2>
+          <p class="text-gray-700 mb-4">
+            belum diisi
+          </p>
+          <p class="text-gray-700 mb-4">
+            belum diisi
+          </p>
+          <p class="text-gray-700 mb-4">
+            belum diisi!
+          </p>
+        </div>
+        <div class="space-y-6">
+          <div class="bg-gray-100 p-8 rounded xl shadow">
+            <h3 class="text-xl font-semibold mb-2">Visi kami</h3>
+            <p class="text-gray-600 mb-3">
+             belum diisi
+            </p>
+          </div>
+          <div class="bg-gray-100 p-8 rounded xl shadow">
+            <h3 class="text-xl font-semibold mb-2">Nilai Perusahaan</h3>
+            <ul>
+              <li>|-|-|</li>
+              <li>|-|-| </li>
+              <li>Amat baik✅ </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="px-6 py-16 bg-gray-100">
+      <h2 class="text-3xl font-bold text-center mb-10">Layanan Kami</h2>
+      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Web Development -->
+        <div
+          class="bg-white p-8 rounded-xl shadow transition hover:shadow-xl hover:-translate-y-1"
+        >
+          <div
+            class="w-12 h-12 mb-4 flex items-center justify-center rounded-lg bg-blue-100 text-blue-600"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M16 18l6-6-6-6M8 6l-6 6 6 6"
+              >
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Web Development</h3>
+          <p class="text-gray-600">
+            Pembuatan website cepat, aman, dan responsif sesuai kebutuhan
+            bisnis.
+          </p>
+        </div>
+        <!-- UI UX -->
+        <div
+          class="bg-white p-8 rounded-xl shadow transition hover:shadow-xl hover:-translate-y-1"
+        >
+          <div
+            class="w-12 h-12 mb-4 flex items-center justify-center rounded-lg bg-purple-100 text-purple-600"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9.75 17L3 21l4-7.25M14.25 17L21 21l-4-7.25M12 3v10"
+              />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">UI / UX Design</h3>
+          <p class="text-gray-600">
+            Desain antarmuka yang nyaman digunakan dan meningkatkan konversi.
+          </p>
+        </div>
+        <!-- Maintenance -->
+        <div
+          class="bg-white p-8 rounded-xl shadow transition hover:shadow-xl hover:-translate-y-1"
+        >
+          <div
+            class="w-12 h-12 mb-4 flex items-center justify-center rounded-lg bg-green-100 text-green-600"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 8v4l3 3M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Maintenance</h3>
+          <p class="text-gray-600">
+            Perawatan dan pengembangan berkelanjutan untuk website Anda.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--about us-->
+    <section id="about-us" class="px-6">
+      <!-- Judul -->
+      <div class="flex flex-col items-center mt-56 mb-12">
+        <h3 class="text-2xl md:text-3xl font-bold text-slate-700">About us</h3>
+        <div class="w-24 h-1 bg-blue-600 mt-3 rounded-full"></div>
+      </div>
+
+      <!-- Konten kiri & kanan -->
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-start">
+        <!-- KIRI: Deskripsi -->
+        <div>
+          <p class="text-gray-600 mb-2">
+            Kami adalah perusahaan digital yang fokus pada pengembangan website
+            modern dan responsif.
+          </p>
+          <p class="text-gray-600">
+            Website ini dibuat menggunakan pendekatan mobile-first dan teknologi
+            terbaru.
+          </p>
+        </div>
+
+        <!-- KANAN: Visi -->
+        <div class="bg-gray-100 p-6 rounded-lg shadow">
+          <h3 class="text-xl font-semibold mb-2">Visi Kami</h3>
+          <p class="text-gray-600">
+            Membantu bisnis berkembang melalui teknologi digital yang inovatif.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--portofolio cobaan-->
+    <section id="Portfolio" class="px-6 py-16 bg-gray-100">
+      <h2 class="text-3xl font-bold text-center mb-10">Portfolio</h2>
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!--card-->
+        <div
+          class="bg-white rounded-xl shadow overflow-hidden transition hover:shadow-xl hover:-translate-y-1"
+        >
+          <img
+            src="img/company.jpg"
+            alt="company profile website"
+            class="w-full h-46 object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Company Profile Website</h3>
+            <p class="text-gray-600 mb-3">
+              Website profil perusahaan yang menampilkan informasi lengkap
+              tentang bisnis anda.
+            </p>
+            <p class="text-sm text-gray-600">Tech:</p>
+            <span
+              class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 inset-ring inset-ring-red-600/10"
+              >Html</span
+            >
+            <span
+              class="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 inset-ring inset-ring-yellow-600/20"
+              >Tailwind css</span
+            >
+            <span
+              class="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 inset-ring inset-ring-green-600/20"
+              >Css</span
+            >
+          </div>
+        </div>
+      </div>
+
+    <!--portofolio-->
+    <section id="galeri">
+      <div class="flex flex-col items-center mt-56 mb-12">
+        <h2 class="text-3xl font-bold text-center mb-10">Portfolio</h2>
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        </div>
+      </div>
+
+      <div
+        class="mt-64 p-4 font-inter grid grid-cols-2 gap-2 md:grid-cols-4 md:p-4 md:gap-4 px-8 py-3"
+      >
+        <div
+          class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95"
+        >
+          <div
+            class="w-full h-full bg-[url('/img/hero_section.jpg')] bg-cover bg-center group-hover:scale-125 transition-all duration-500"
+          ></div>
+
+          <div class="absolute bottom-0 left-0 w-full bg-slate-900/60 p-3">
+            <h3
+              class="text-white text-lg font-semibold group-hover:text-blue-400"
+            >
+              Brand Identity
+            </h3>
+            <p class="text-sm text-gray-200">
+              Corporate branding & visual identity
+            </p>
+          </div>
+        </div>
+        <div
+          class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95"
+        >
+          <div
+            class="w-full h-full bg-[url('/img/hero_section.jpg')] bg-cover bg-center group-hover:scale-125 transition-all duration-500"
+          ></div>
+
+          <div class="absolute bottom-0 left-0 w-full bg-slate-900/60 p-3">
+            <h3
+              class="text-white text-lg font-semibold group-hover:text-blue-400"
+            >
+              Brand Identity
+            </h3>
+            <p class="text-sm text-gray-200">
+              Corporate branding & visual identity
+            </p>
+          </div>
+        </div>
+        <div
+          class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95"
+        >
+          <div
+            class="w-full h-full bg-[url('/img/hero_section.jpg')] bg-cover bg-center group-hover:scale-125 transition-all duration-500"
+          ></div>
+          <div class="absolute bottom-0 left-0 w-full bg-slate-900/60 p-3">
+            <h3
+              class="text-white text-lg font-semibold group-hover:text-blue-400"
+            >
+              Brand Identity
+            </h3>
+            <p class="text-sm text-gray-200">
+              Corporate branding & visual identity
+            </p>
+          </div>
+        </div>
+        <div
+          class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95"
+        >
+          <div
+            class="w-full h-full bg-[url('/image/images.jpg')] bg-cover bg-center group-hover:scale-125 transition-all duration-500"
+          ></div>
+          <div class="absolute bottom-0 left-0 w-full bg-slate-900/60 p-3">
+            <h3
+              class="text-white text-lg font-semibold group-hover:text-blue-400"
+            >
+              Brand Identity
+            </h3>
+            <p class="text-sm text-gray-200">
+              Corporate branding & visual identity
+            </p>
+          </div>
+        </div>
+        <div
+          class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95"
+        >
+          <div
+            class="w-full h-full bg-[url('image/images.jpg')] bg-cover bg-center group-hover:scale-125 transition-all duration-500"
+          ></div>
+          <div class="absolute bottom-0 left-0 w-full bg-slate-900/60 p-3">
+            <h3
+              class="text-white text-lg font-semibold group-hover:text-blue-400"
+            >
+              Brand Identity
+            </h3>
+            <p class="text-sm text-gray-200">
+              Corporate branding & visual identity
+            </p>
+          </div>
+        </div>
+        <div
+          class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95"
+        >
+          <div
+            class="w-full h-full bg-[url('image/pexel.jpg')] bg-cover bg-center group-hover:scale-125 transition-all duration-500"
+          ></div>
+          <div class="absolute bottom-0 left-0 w-full bg-slate-900/60 p-3">
+            <h3
+              class="text-white text-lg font-semibold group-hover:text-blue-400"
+            >
+              Brand Identity
+            </h3>
+            <p class="text-sm text-gray-200">
+              Corporate branding & visual identity
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="px-6 py-16 bg-white">
+      <h2 class="text-3xl font-bold text-center mb-10">kontak kami</h2>
+
+     <form name="nameForm"  method="post"
+     Layanan Kami
+            class="max-w-xl mx-auto bg-gray-100 p-8 rounded-xl shadow space-y-4">
+            <input name="name" type="text" placeholder="Nama"
+                class="w-full px-4 py-3 rounded-lg border focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200">
+
+
+            <input name="email" type="email" placeholder="Email"
+                class="w-full px-4 py-3 rounded-lg border focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200">
+
+
+            <textarea name="pesan" rows="4" placeholder="Pesan"
+                class="w-full px-4 py-3 rounded-lg border focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200"></textarea>
+
+
+            <button type="submit"
+                class="w-full bg-blue-600 hover:bg-blue-500 active:bg-blue-700 text-white py-3 rounded-lg font-semibold transition">
+                Kirim Pesan
+            </button>
+        </form>
+
+
+
+    </section>
+
+    <footer class="bg-slate-800 text-white text-center p-6 mt-10">
+      <p>&copy; 2026 Brandkita, semua Hak dilindungi</p>
+    </footer>
+
+    <script>
+      const btn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+
+    <script>
+function validateForm() {
+    let name = document.forms["nameForm"]["name"].value;
+    let email = document.forms["nameForm"]["email"].value;
+    let pesan = document.forms["nameForm"]["pesan"].value;
+
+    if (name === "") {
+        alert("Kolom nama harus diisi");
+        return false;
+    }
+
+    if (email === "") {
+        alert("Kolom email harus diisi");
+        return false;
+    }
+
+    if (pesan === "") {
+        alert("Kolom pesan harus diisi");
+        return false;
+    }
+
+    return true;
+}
+</script>
+
+    <script>
+document.forms["nameForm"].addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    if (!validateForm()) return;
+
+    const data = {
+        name: this.name.value,
+        email: this.email.value,
+        pesan: this.pesan.value
+    };
+
+    let listData = JSON.parse(localStorage.getItem("pesan")) || [];
+    listData.push(data);
+
+    localStorage.setItem("pesan", JSON.stringify(listData));
+
+    alert("Pesan berhasil dikirim 👍");
+    this.reset();
+});
+</script>
+   
+  </body>
+
+</html>
